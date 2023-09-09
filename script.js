@@ -14,13 +14,13 @@ arr.forEach((button) => {
             if (dotCount > 0) {
                 let ans = eval(str);
                 input.value = ans.toFixed(2);
-                str = ans;
+               
                 dotCount = 0;
             }
             else {
                 let ans = eval(str);
                 input.value = ans;
-                str = ans;
+                
             }
 
         }
