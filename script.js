@@ -36,7 +36,7 @@ arr.forEach((button) => {
             input.value = str;
             topInput.value = "";
             bottom.value = str;
-            
+            startResult = false;
         }
 
         else if (e.target.innerText == 'DEL') {
