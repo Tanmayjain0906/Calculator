@@ -17,13 +17,12 @@ arr.forEach((button) => {
                 str = ans;
                 dotCount = 0;
             }
-            else
-            {
+            else {
                 let ans = eval(str);
                 input.value = ans;
                 str = ans;
             }
-            
+
         }
 
         else if (e.target.innerText == 'AC') {
@@ -35,6 +34,15 @@ arr.forEach((button) => {
             let remainString = str.substring(0, str.length - 1);
             input.value = remainString;
             str = remainString;
+        }
+
+        else if (e.target.innerText == '%' || e.target.innerText == '/' || e.target.innerText == '*' || e.target.innerText == '-' || e.target.innerText == '+') {
+            let check = str[str.length - 1];
+
+            if (check != '%' && check != '/' && check != '*' && check != '-' && check != '+') {
+                str += e.target.innerText;
+                input.value = str;
+            }
         }
 
         else {
