@@ -49,7 +49,7 @@ arr.forEach((button) => {
         else if (e.target.innerText == '%' || e.target.innerText == '/' || e.target.innerText == '*' || e.target.innerText == '-' || e.target.innerText == '+') {
             let check = str[str.length - 1];
 
-            if (check != '%' && check != '/' && check != '*' && check != '-' && check != '+') {
+            if (check != '%' && check != '/' && check != '*' && check != '-' && check != '+' && str.length>0) {
                 str += e.target.innerText;
                 input.value = str;
                 startResult = true;
